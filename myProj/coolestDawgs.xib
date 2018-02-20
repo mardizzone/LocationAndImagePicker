@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uW0-dx-2BM" customClass="PostView" customModule="myProj" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6D-vi-tv9">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="72"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-ro-YYv">
+                            <rect key="frame" x="8" y="0.0" width="32" height="25"/>
+                            <state key="normal" image="btnAddPhoto"/>
+                            <connections>
+                                <action selector="photoPressed:" destination="uW0-dx-2BM" eventType="touchUpInside" id="Lut-yb-ihf"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-YN-waw">
+                            <rect key="frame" x="20" y="24" width="355.5" height="33"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0c-7Z-iZb">
+                                    <rect key="frame" x="0.0" y="0.0" width="177.5" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.85476666688919067" green="0.39323863387107849" blue="0.55189138650894165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelPressed:" destination="uW0-dx-2BM" eventType="touchUpInside" id="Xhy-OF-Lcw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzM-Pa-Dbb">
+                                    <rect key="frame" x="177.5" y="0.0" width="178" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <state key="normal" title="Post">
+                                        <color key="titleColor" red="0.85476666690000003" green="0.39323863390000002" blue="0.55189138650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="KzM-Pa-Dbb" firstAttribute="width" secondItem="l0c-7Z-iZb" secondAttribute="width" id="tqp-WE-9eB"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Soh-YN-waw" firstAttribute="centerX" secondItem="L6D-vi-tv9" secondAttribute="centerX" id="0SI-aJ-yPr"/>
+                        <constraint firstAttribute="bottom" secondItem="Soh-YN-waw" secondAttribute="bottom" constant="15" id="0lb-Jz-yKJ"/>
+                        <constraint firstItem="4bf-ro-YYv" firstAttribute="leading" secondItem="L6D-vi-tv9" secondAttribute="leading" constant="8" id="1Dd-M0-1O0"/>
+                        <constraint firstItem="Soh-YN-waw" firstAttribute="width" secondItem="L6D-vi-tv9" secondAttribute="width" multiplier="0.9" id="60b-NV-cxu"/>
+                        <constraint firstItem="4bf-ro-YYv" firstAttribute="top" secondItem="L6D-vi-tv9" secondAttribute="top" id="g3F-IE-n4D"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L6D-vi-tv9" firstAttribute="trailing" secondItem="nca-M4-GDU" secondAttribute="trailing" id="FOp-ZL-ITW"/>
+                <constraint firstItem="L6D-vi-tv9" firstAttribute="bottom" secondItem="nca-M4-GDU" secondAttribute="bottom" id="iL2-Zi-iNz"/>
+                <constraint firstItem="L6D-vi-tv9" firstAttribute="top" secondItem="uW0-dx-2BM" secondAttribute="top" id="sNw-5Y-Ve7"/>
+                <constraint firstItem="L6D-vi-tv9" firstAttribute="leading" secondItem="nca-M4-GDU" secondAttribute="leading" id="yu5-cL-ilj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nca-M4-GDU"/>
+            <connections>
+                <outlet property="cancelButton" destination="l0c-7Z-iZb" id="gCw-Xn-OML"/>
+                <outlet property="postButton" destination="KzM-Pa-Dbb" id="ppo-kn-NWX"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="-126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnAddPhoto" width="32" height="25"/>
+    </resources>
+</document>
