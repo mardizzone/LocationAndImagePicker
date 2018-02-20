@@ -80,6 +80,8 @@
 		7F4369D220394B670002529F /* myProj */ = {
 			isa = PBXGroup;
 			children = (
+				7F88D074203C957D00205784 /* Networking */,
+				7F88D073203C955900205784 /* Views */,
 				7F88D06E203B83A300205784 /* ViewControllers */,
 				7F4369F1203B74C90002529F /* Models */,
 				7F4369D320394B670002529F /* AppDelegate.swift */,
@@ -87,9 +89,6 @@
 				7F4369DA20394B670002529F /* Assets.xcassets */,
 				7F4369DC20394B670002529F /* LaunchScreen.storyboard */,
 				7F4369DF20394B670002529F /* Info.plist */,
-				7F4369E9203A405A0002529F /* Console.xib */,
-				7F4369EB203A41D00002529F /* PostView.swift */,
-				7F4369ED203A952C0002529F /* Networking.swift */,
 			);
 			path = myProj;
 			sourceTree = "<group>";
@@ -109,6 +108,23 @@
 				7F4369F2203B7A060002529F /* LocationPickerViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F88D073203C955900205784 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F4369E9203A405A0002529F /* Console.xib */,
+				7F4369EB203A41D00002529F /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F88D074203C957D00205784 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F4369ED203A952C0002529F /* Networking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		DBAFA4CFB7D35AFB311C6779 /* Frameworks */ = {

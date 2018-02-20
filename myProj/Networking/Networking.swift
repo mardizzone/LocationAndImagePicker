@@ -11,11 +11,7 @@ import Alamofire
 
 
 class Networking {
-    
-    //oauth_token=M4SLKM0RRYS3CL3OCGHN4CKKDWUX4NJWGD1024MPZCTLMSL2&v=20180218
-    //https://api.foursquare.com/v2/venues/search
-    //ll=40.7484,-73.9857
-    
+    //We could store the token in Keychain for a production app to make it more secure
    class func getNearbyVenues(latitude: Double, longitude: Double, completionHandler : @escaping (FoursquareModel) -> Void) {
         let coordinates = "\(latitude),\(longitude)"
         let params: Parameters = ["ll" : coordinates, "oauth_token" : "M4SLKM0RRYS3CL3OCGHN4CKKDWUX4NJWGD1024MPZCTLMSL2", "v" : "20180218"]

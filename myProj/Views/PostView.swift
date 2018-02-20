@@ -9,10 +9,8 @@
 import UIKit
 
 class PostView: UIView {
-    
     @IBOutlet var postButton: UIButton!
     @IBOutlet var cancelButton: UIButton!
-    
     var postDelegate : PostViewDelegate?
 
     @IBAction func photoPressed(_ sender: Any) {
@@ -26,7 +24,6 @@ class PostView: UIView {
     @IBAction func postPressed(_ sender: Any) {
         print("not implemented")
     }
-    
 }
 
 
