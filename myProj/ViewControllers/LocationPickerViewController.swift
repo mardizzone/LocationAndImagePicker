@@ -14,9 +14,7 @@ class LocationPickerViewController: UIViewController {
     var venues = [String]()
     var selectedVenue = ""
     var delegate : SelectedLocationDelegate?
-    
     var filteredData = [String]()
-    
     var isSearching = false
     
     override func viewDidLoad() {
@@ -29,7 +27,7 @@ class LocationPickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // go back to main view controller
     @IBAction func cancelPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -50,8 +48,6 @@ extension LocationPickerViewController: UITableViewDataSource, UITableViewDelega
         } else {
             return venues.count
         }
-        
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,9 +71,6 @@ extension LocationPickerViewController: UITableViewDataSource, UITableViewDelega
         } else {
             selectedVenue = venues[indexPath.row]
         }
-        
-        
-        
         let locationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "locationVC") as! ViewController
         self.delegate = locationVC
         locationVC.selectedLocation = selectedVenue
@@ -102,9 +95,6 @@ extension LocationPickerViewController: UISearchBarDelegate {
                     return false
                 }
             })
-            
-            
-            
             locationsTableView.reloadData()
         }
     }

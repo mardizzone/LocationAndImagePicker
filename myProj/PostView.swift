@@ -20,9 +20,11 @@ class PostView: UIView {
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
+        postDelegate?.cancelTapped()
     }
     
     @IBAction func postPressed(_ sender: Any) {
+        print("not implemented")
     }
     
 }

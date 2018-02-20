@@ -94,6 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bodyTextField" destination="08u-Xk-sDk" id="vlz-QY-KoO"/>
                         <outlet property="currentLocationLabel" destination="3mp-3u-9OR" id="AIS-zp-l8p"/>
                         <outlet property="headlineTextField" destination="oUJ-wc-8qt" id="vPi-91-siW"/>
                         <outlet property="selectedImageView" destination="zBE-Mt-ncR" id="OBQ-y1-geW"/>
@@ -174,24 +175,6 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1141.5999999999999" y="133.5832083958021"/>
-        </scene>
-        <!--Four Square Table View Controller-->
-        <scene sceneID="OrU-kh-R5q">
-            <objects>
-                <tableViewController id="u41-rh-4Ai" customClass="FourSquareTableViewController" customModule="myProj" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OiM-Z7-Rce">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="dataSource" destination="u41-rh-4Ai" id="v51-sc-tH6"/>
-                            <outlet property="delegate" destination="u41-rh-4Ai" id="Bop-ZT-WB8"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hZN-hA-ZgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2257" y="132"/>
         </scene>
     </scenes>
     <resources>

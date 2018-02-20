@@ -12,14 +12,11 @@
 		7F4369D920394B670002529F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369D720394B670002529F /* Main.storyboard */; };
 		7F4369DB20394B670002529F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369DA20394B670002529F /* Assets.xcassets */; };
 		7F4369DE20394B670002529F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369DC20394B670002529F /* LaunchScreen.storyboard */; };
-		7F4369E620394D3E0002529F /* myPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369E520394D3E0002529F /* myPhotoView.xib */; };
-		7F4369E820394D7C0002529F /* whatCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4369E720394D7C0002529F /* whatCool.swift */; };
-		7F4369EA203A405A0002529F /* coolestDawgs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369E9203A405A0002529F /* coolestDawgs.xib */; };
+		7F4369EA203A405A0002529F /* Console.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4369E9203A405A0002529F /* Console.xib */; };
 		7F4369EC203A41D00002529F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4369EB203A41D00002529F /* PostView.swift */; };
 		7F4369EE203A952C0002529F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4369ED203A952C0002529F /* Networking.swift */; };
 		7F4369F0203B74C30002529F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4369EF203B74C30002529F /* Models.swift */; };
 		7F4369F3203B7A060002529F /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4369F2203B7A060002529F /* LocationPickerViewController.swift */; };
-		7F88D070203BAD3300205784 /* FourSquareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F88D06F203BAD3300205784 /* FourSquareTableViewController.swift */; };
 		DFC3FA1E11431D5F594D6E33 /* Pods_myProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF2F524E36BADFE0DA95E9 /* Pods_myProj.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,14 +29,11 @@
 		7F4369DA20394B670002529F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4369DD20394B670002529F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4369DF20394B670002529F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F4369E520394D3E0002529F /* myPhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myPhotoView.xib; sourceTree = "<group>"; };
-		7F4369E720394D7C0002529F /* whatCool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatCool.swift; sourceTree = "<group>"; };
-		7F4369E9203A405A0002529F /* coolestDawgs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coolestDawgs.xib; sourceTree = "<group>"; };
+		7F4369E9203A405A0002529F /* Console.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Console.xib; sourceTree = "<group>"; };
 		7F4369EB203A41D00002529F /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		7F4369ED203A952C0002529F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7F4369EF203B74C30002529F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7F4369F2203B7A060002529F /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
-		7F88D06F203BAD3300205784 /* FourSquareTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareTableViewController.swift; sourceTree = "<group>"; };
 		A234A5308CECFBEBCBB8481D /* Pods-myProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProj/Pods-myProj.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F54E217EB4BFE92FE483E0 /* Pods-myProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProj/Pods-myProj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +87,7 @@
 				7F4369DA20394B670002529F /* Assets.xcassets */,
 				7F4369DC20394B670002529F /* LaunchScreen.storyboard */,
 				7F4369DF20394B670002529F /* Info.plist */,
-				7F4369E520394D3E0002529F /* myPhotoView.xib */,
-				7F4369E720394D7C0002529F /* whatCool.swift */,
-				7F4369E9203A405A0002529F /* coolestDawgs.xib */,
+				7F4369E9203A405A0002529F /* Console.xib */,
 				7F4369EB203A41D00002529F /* PostView.swift */,
 				7F4369ED203A952C0002529F /* Networking.swift */,
 			);
@@ -115,7 +107,6 @@
 			children = (
 				7F4369D520394B670002529F /* ViewController.swift */,
 				7F4369F2203B7A060002529F /* LocationPickerViewController.swift */,
-				7F88D06F203BAD3300205784 /* FourSquareTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,9 +183,8 @@
 			files = (
 				7F4369DE20394B670002529F /* LaunchScreen.storyboard in Resources */,
 				7F4369DB20394B670002529F /* Assets.xcassets in Resources */,
-				7F4369EA203A405A0002529F /* coolestDawgs.xib in Resources */,
+				7F4369EA203A405A0002529F /* Console.xib in Resources */,
 				7F4369D920394B670002529F /* Main.storyboard in Resources */,
-				7F4369E620394D3E0002529F /* myPhotoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +253,7 @@
 			files = (
 				7F4369D620394B670002529F /* ViewController.swift in Sources */,
 				7F4369F3203B7A060002529F /* LocationPickerViewController.swift in Sources */,
-				7F88D070203BAD3300205784 /* FourSquareTableViewController.swift in Sources */,
 				7F4369EE203A952C0002529F /* Networking.swift in Sources */,
-				7F4369E820394D7C0002529F /* whatCool.swift in Sources */,
 				7F4369F0203B74C30002529F /* Models.swift in Sources */,
 				7F4369EC203A41D00002529F /* PostView.swift in Sources */,
 				7F4369D420394B670002529F /* AppDelegate.swift in Sources */,
