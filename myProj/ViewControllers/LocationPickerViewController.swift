@@ -10,15 +10,18 @@ import UIKit
 
 class LocationPickerViewController: UIViewController {
     
+    @IBOutlet var locationsTableView: UITableView!
     var venues = [String]()
     var selectedVenue = ""
-    
     var delegate : SelectedLocationDelegate?
-
+    
+    var filteredData = [String]()
+    
+    var isSearching = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(venues)
+                
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,17 +45,39 @@ extension LocationPickerViewController: UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return venues.count
+        if isSearching {
+            return filteredData.count
+        } else {
+            return venues.count
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "venue")
-        cell?.textLabel?.text = venues[indexPath.row]
+        let text : String?
+        
+        if isSearching {
+            text = filteredData[indexPath.row]
+        } else {
+            text = venues[indexPath.row]
+        }
+        
+        cell?.textLabel?.text = text
+        
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedVenue = venues[indexPath.row]
+        if isSearching {
+            selectedVenue = filteredData[indexPath.row]
+        } else {
+            selectedVenue = venues[indexPath.row]
+        }
+        
+        
+        
         let locationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "locationVC") as! ViewController
         self.delegate = locationVC
         locationVC.selectedLocation = selectedVenue
@@ -61,6 +86,30 @@ extension LocationPickerViewController: UITableViewDataSource, UITableViewDelega
     }
     
 }
+
+extension LocationPickerViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            locationsTableView.reloadData()
+        } else {
+            isSearching = true
+            filteredData = venues.filter({ (venues: String) -> Bool in
+                if venues.localizedCaseInsensitiveContains(searchBar.text!) {
+                    return true
+                } else {
+                    return false
+                }
+            })
+            
+            
+            
+            locationsTableView.reloadData()
+        }
+    }
+}
+
 
 protocol SelectedLocationDelegate {
     var selectedLocation : String? {get set}
