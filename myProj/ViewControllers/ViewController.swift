@@ -58,7 +58,7 @@ class ViewController: UIViewController, SelectedLocationDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var locationPicker = segue.destination as! LocationPickerViewController
+        let locationPicker = segue.destination as! LocationPickerViewController
         locationPicker.delegate = self
         //pass the venues to our location picker viewcontroller
         locationPicker.venues = localVenueNames
@@ -87,11 +87,9 @@ extension ViewController : CLLocationManagerDelegate {
         locationLatitude = locations.first?.coordinate.latitude
         locationLongitude = locations.first?.coordinate.longitude
         Networking.getNearbyVenues(latitude: locationLatitude!, longitude: locationLongitude!, completionHandler: { response in
-            if let neareastLocation = response.response.venues.first?.name {
-                for item in response.response.venues {
-                    //get the local venues to present when the user taps on "Chose location"
-                    self.localVenueNames.append(item.name)
-                }
+            for item in response.response.venues {
+                //get the local venues to present when the user taps on "Choose location"
+                self.localVenueNames.append(item.name)
             }
         })
     }

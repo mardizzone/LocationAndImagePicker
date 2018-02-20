@@ -29,7 +29,6 @@ class parseJSON {
             return foursquareData
         } catch {
             print("error trying to convert data to JSON")
-            (error)
             return nil
         }
     }
