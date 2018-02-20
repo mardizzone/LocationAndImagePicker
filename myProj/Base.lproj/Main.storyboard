@@ -45,7 +45,6 @@
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-Mt-ncR">
                                         <rect key="frame" x="0.0" y="190" width="375" height="215"/>
-                                        <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmK-5D-9Vg">
                                         <rect key="frame" x="0.0" y="405" width="375" height="172"/>
@@ -97,6 +96,7 @@
                     <connections>
                         <outlet property="currentLocationLabel" destination="3mp-3u-9OR" id="AIS-zp-l8p"/>
                         <outlet property="headlineTextField" destination="oUJ-wc-8qt" id="vPi-91-siW"/>
+                        <outlet property="selectedImageView" destination="zBE-Mt-ncR" id="OBQ-y1-geW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

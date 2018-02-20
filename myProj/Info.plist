@@ -47,5 +47,9 @@
 	<string></string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>Photos to post</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photos to post</string>
 </dict>
 </plist>

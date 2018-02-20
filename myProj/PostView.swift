@@ -16,16 +16,15 @@ class PostView: UIView {
     var postDelegate : PostViewDelegate?
 
     @IBAction func photoPressed(_ sender: Any) {
-        print("photo")
+       postDelegate?.photoTapped()
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
-        print("cancel")
     }
     
     @IBAction func postPressed(_ sender: Any) {
-        print("post")
     }
     
-    
 }
+
+
