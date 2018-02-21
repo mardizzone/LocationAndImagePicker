@@ -43,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-Mt-ncR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-Mt-ncR">
                                         <rect key="frame" x="0.0" y="190" width="375" height="215"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmK-5D-9Vg">
@@ -72,7 +72,7 @@
                                 <color key="textColor" red="0.27839714290000001" green="0.2784510255" blue="0.2783937454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-xb-4Tq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-xb-4Tq">
                                 <rect key="frame" x="71" y="51" width="105" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
@@ -95,6 +95,7 @@
                     </view>
                     <connections>
                         <outlet property="bodyTextField" destination="08u-Xk-sDk" id="vlz-QY-KoO"/>
+                        <outlet property="changeLocationButton" destination="S3T-xb-4Tq" id="LHK-bV-hWx"/>
                         <outlet property="currentLocationLabel" destination="3mp-3u-9OR" id="AIS-zp-l8p"/>
                         <outlet property="headlineTextField" destination="oUJ-wc-8qt" id="vPi-91-siW"/>
                         <outlet property="selectedImageView" destination="zBE-Mt-ncR" id="OBQ-y1-geW"/>

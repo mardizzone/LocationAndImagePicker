@@ -19,6 +19,7 @@ protocol PostViewDelegate {
 
 class ViewController: UIViewController, SelectedLocationDelegate {
     @IBOutlet var selectedImageView: UIImageView!
+    @IBOutlet weak var changeLocationButton: UIButton!
     let locationManager = CLLocationManager()
     var locationLongitude : Double?
     var locationLatitude : Double?
@@ -91,6 +92,9 @@ extension ViewController : CLLocationManagerDelegate {
                 //get the local venues to present when the user taps on "Choose location"
                 self.localVenueNames.append(item.name)
             }
+            //enable the the change location button once are venues have been downloaded
+            self.changeLocationButton.isEnabled = true
+            self.changeLocationButton.pulsate()
         })
     }
     
@@ -137,6 +141,7 @@ extension ViewController: PostViewDelegate {
         selectedImageView.image = nil
         bodyTextField.text = ""
         headlineTextField.text = ""
+        currentLocationLabel.text = "Current Location"
     }
     
     func postPressed() {
